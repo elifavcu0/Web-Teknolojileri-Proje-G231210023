@@ -1,46 +1,31 @@
 # Web-Teknolojileri-Proje-G231210023
-2024-2025 Web Teknolojileri Proje Ödevi
-
 ## Proje Amacı
 Bu proje, Web Teknolojileri dersi kapsamında HTML, CSS, JavaScript ve ilgili teknolojiler kullanılarak bireysel bir web sitesi geliştirilmesini amaçlamaktadır.
 
 ## Proje İçeriği
-- **Bireysel Web Sitesi:** 
-  - Kendinizi ve memleketinizi tanıtan bir web sitesi hazırlanacaktır.
-  
-- **Teknik Gereksinimler:**
-  - **Responsive Tasarım:** Bootstrap kullanılarak mobil uyumlu tasarım yapılacaktır.
+  - **Responsive Tasarım:** Bootstrap kullanılarak responsive bir yapı sağlanmıştır.
   - **Hakkında Sayfası:** 
-    - Kişisel bilgiler, hobiler, etkinlikler, resimler ve ilgili bağlantılar yer alacaktır.
+    - Kişisel bilgilerim, hobilerim,ilgili resimler ve ilgili bağlantılar bu sayfada yer almaktadır.
   - **Özgeçmiş (CV) Sayfası:** 
-    - Eğitim bilgileri semantik HTML etiketleri kullanılarak listelenecektir.
+    - Eğitim bilgilerim semantik HTML etiketleri kullanılarak bu sayfada listelenmektedir.
   - **Şehrim Sayfası:** 
-    - Şehir bilgileri, 4 resimlik bir slider ve resimlerin içeriklere yönlendirme bağlantıları bulunacaktır.
-  - **Mirasımız / Takımımız Sayfası:** 
-    - Şehrin kültürel mirası veya spor takımı hakkında tanıtım sayfası.
+    - Memleketim hakkında bilgiler, 4 resimlik bir slider ve resimlerin içeriklere yönlendirme bağlantıları bu sayfada bulunmaktadır.
+  - **Mirasımız Sayfası:** 
+    - Memleketimin kültürel mirası hakkında tanıtım sayfası.
   - **İlgi Alanlarım Sayfası:** 
-    - Ücretsiz bir API kullanılarak veri çekilecek ve görüntülenecektir.(Döviz API'leri hariç)
+    - İlgi alanlarım doğrultusunda ücretsiz bir API kullanılarak veri çekilen ve görüntülenen sayfa.
   - **Login Sayfası:** 
-    - Öğrenci numarası ve şifre ile giriş yapılacak, PHP ile doğrulama sağlanacaktır.
-    - Doğru girişte "Hoşgeldiniz" mesajı, hatalı girişte yönlendirme yapılacaktır.
+    - Öğrenci numaram ve şifrem ile giriş yapılan, PHP ile doğrulama sağlanan sayfa.
+    - Doğru girişte "Hoşgeldiniz" mesajı, hatalı girişte yönlendirme yapılmaktadır.
   - **İletişim Sayfası:** 
-    - Form elemanları (ad, soyad, e-posta, mesaj vb.) içerecek.
-    - Form doğrulamaları JavaScript ve bir JS Framework (Vue.js, Angular.js, Express.js vb.) kullanılarak yapılacaktır.
-    - Form gönderildikten sonra bilgiler başka bir sayfada görüntülenecektir.
-
+    - Form elemanları ile hazırlanan, JavaScript ve bir JS Framework (Vue.js, Angular.js, Express.js vb.) ile doğrulama yapılan bir sayfa.
 - **Stil Dosyası:**
-  - Tüm CSS kodları ayrı bir stil dosyasında tutulacaktır.
+  - Tüm CSS kodlarımı tuttuğum ayrı bir stil dosyası.
 
-- **GitHub Kullanımı:**
-  - Proje herkese açık olacaktır.
-  - Farklı günlerde minimum 10 commit yapılması zorunludur.
-
-- **Hosting:**
+ -**Proje Gelişim Süreci:**
+  - Proje herkese açık bir şekilde Github üzerinden (repository) geliştirilecektir.
+  - Farklı günlerde minimum 10 commit yapılacaktır.
   - Proje bir hosting hizmetine yüklenerek internet üzerinden erişilebilir olacaktır.
-
-## Teslim ve Sunum
-- Proje sunumuna katılım zorunludur. Katılmayan öğrenciler puan alamayacaktır.
-- Projede herhangi bir soruya cevap verilememesi durumunda ilgili bölümden veya tamamından puan kaybı yaşanacaktır.
 
 ## Son Teslim Tarihi
 📅 **25 Mayıs Pazar, 23:00**
