@@ -1,0 +1,25 @@
+.fotografim {
+  height: 350px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid white;
+}
+#hakkimda-baslik {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  font-weight: bolder;
+  color: #2e4c6d;
+  margin-top: 15px;
+  text-align: center;
+}
+.hakkimda-icon {
+  animation-duration: 2s;
+  font-size: 30px;
+}
+.aktif-buton {
+  background-color: #f7d9d9;
+  color: #2e4c6d !important;
+  border-color: #a3c4f3;
+}
