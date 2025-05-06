@@ -6,15 +6,21 @@
   margin: 0 auto;
   border: 5px solid white;
 }
-#hakkimda-baslik {
-  font-family: "Dancing Script", cursive;
-  font-size: 35px;
+@media (max-width: 768px) {
+  .fotografim {
+    height: 250px;
+  }
+}
+#hakkimda-baslik,
+#hobilerim-baslik {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
   font-weight: bolder;
   color: #2e4c6d;
   margin-top: 15px;
   text-align: center;
 }
-.hakkimda-icon {
+.hobilerim-icon {
   animation-duration: 2s;
   font-size: 30px;
 }
@@ -22,4 +28,55 @@
   background-color: #f7d9d9;
   color: #2e4c6d !important;
   border-color: #a3c4f3;
+}
+.img-slider {
+  max-width: 400px;
+}
+h4 {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #2e4c6d;
+  margin-top: 15px;
+}
+.custom-caption {
+  top: 85%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: fit-content; /* Sadece içerik kadar genişlik */
+  height: 10%;
+  margin: 0 auto; /* Ortala */
+}
+@media (max-width: 768px) {
+  .custom-caption {
+    bottom: 10%;
+    padding: 1rem;
+  }
+}
+.carousel-image {
+  max-height: 500px;
+  object-fit: cover;
+}
+.icerik-section {
+  background-image: url("../img/bulut_arkaplan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10%;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.1); /* #2e4c6d rengi %80 opak */
+}
+footer {
+  background-color: #2e4c6d !important;
+  color: white;
+  position: relative; /* footer'ın katmanını ayarlıyoruz */
+  z-index: 10; /* footer'ın diğer öğelerin üzerinde görünmesini sağlıyoruz */
+  text-align: center;
+}
+.github-icon:hover,
+.linkedin-icon:hover {
+  color: #f7d9d9 !important;
 }
