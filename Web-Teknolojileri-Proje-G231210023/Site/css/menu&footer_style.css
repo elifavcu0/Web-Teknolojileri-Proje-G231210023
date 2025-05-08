@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #2e4c6d;
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: #a3c4f3;
+}
+#logo-isim-soyisim {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: x-large;
+}
+.roket_logo {
+  font-size: 25px;
+  color: white;
+  animation-duration: 2s;
+  margin-right: 8px;
+}
+.roket_logo:hover,
+#logo-isim-soyisim:hover {
+  color: #f7d9d9 !important;
+}
+.custom-btn {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  transition: 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+.custom-btn:hover {
+  background-color: #f7d9d9;
+  color: #2e4c6d;
+  border-color: #a3c4f3;
+}
+.login-butonu {
+  background-color: white;
+  color: darkblue;
+  border: 2px solid white;
+}
+.login-butonu:hover {
+  background-color: #a3c4f3;
+  color: white;
+  border-color: #f7d9d9;
+}
+footer {
+  background-color: #2e4c6d !important;
+  color: white;
+  position: relative; /* footer'ın katmanını ayarlıyoruz */
+  z-index: 10; /* footer'ın diğer öğelerin üzerinde görünmesini sağlıyoruz */
+  text-align: center;
+}
+.github-icon:hover,
+.linkedin-icon:hover {
+  color: #f7d9d9 !important;
+}

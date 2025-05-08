@@ -1,9 +1,10 @@
 .fotografim {
-  height: 350px;
-  width: auto;
-  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+  object-fit: contain;
   border: 5px solid white;
 }
 @media (max-width: 768px) {
@@ -58,7 +59,7 @@ h4 {
 }
 .carousel-image {
   max-height: 500px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .icerik-section {
   background-image: url("../img/bulut_arkaplan.jpg");
@@ -68,15 +69,4 @@ h4 {
   padding-bottom: 10%;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.1); /* #2e4c6d rengi %80 opak */
-}
-footer {
-  background-color: #2e4c6d !important;
-  color: white;
-  position: relative; /* footer'ın katmanını ayarlıyoruz */
-  z-index: 10; /* footer'ın diğer öğelerin üzerinde görünmesini sağlıyoruz */
-  text-align: center;
-}
-.github-icon:hover,
-.linkedin-icon:hover {
-  color: #f7d9d9 !important;
 }

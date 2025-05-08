@@ -3,3 +3,85 @@
   color: #2e4c6d;
   border-color: #a3c4f3;
 }
+h5 {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 13px;
+}
+.egitim-sertifika-kisiselBilgi-basliklari {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-left: 0 !important;
+}
+#icerik-section {
+  position: relative;
+  background-image: url("../img/kitaplar_arkaplan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10%;
+  background-attachment: fixed;
+}
+
+#icerik-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* %50 opak siyah */
+  z-index: 1;
+}
+#icerik-section .container {
+  position: relative;
+  z-index: 2;
+}
+#egitim-basliklari {
+  background-color: #a3c4f3;
+  color: white;
+  font-weight: bold;
+}
+.becerilerim {
+  min-width: 55px;
+}
+.becerilerim:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+#bilgilerim-div {
+  background-color: rgba(255, 255, 255, 0.8); /* Beyaz ve %80 opak */
+}
+.card:hover {
+  transform: scale(1.05); /* Kartın boyutunu büyütme */
+  transition: transform 0.3s ease;
+}
+#sertifikalar-container {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.sertifikalar-card {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.sertifikalar-img {
+  width: 150px;
+  height: 110px;
+  margin: 0 auto;
+}
+.sertifikalar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+@media (max-width: 768px) {
+  #sertifikalar-container {
+    padding-left: 0;
+  }
+}
