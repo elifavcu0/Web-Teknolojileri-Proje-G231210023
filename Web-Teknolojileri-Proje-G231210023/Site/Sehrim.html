@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Şehrim</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/menu&footer_style.css" />
+    <link rel="stylesheet" href="css/sehrim_style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid justify-content-between">
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="Hakkimda.html"
+              id="logo-isim-soyisim"
+              ><i class="fa-solid fa-rocket fa-beat roket_logo"></i>Elif Avcu</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav d-flex align-items-center gap-2">
+                <li class="nav-item">
+                  <a
+                    href="Hakkimda.html"
+                    class="btn custom-btn"
+                    id="hakkimda-butonu"
+                  >
+                    <i class="bi bi-person-lines-fill"></i> Hakkımda</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a href="Ozgecmis.html" class="btn custom-btn">
+                    <i class="fa-solid fa-award"></i>
+                    Özgeçmiş</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="ilgi-alanlarim.html" class="btn custom-btn">
+                    <i class="fa-solid fa-icons"></i> İlgi Alanlarım</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="Sehrim.html" class="btn custom-btn aktif-buton"
+                    ><i class="fa-solid fa-tree-city"></i> Şehrim</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="Mirasimiz.html" class="btn custom-btn"
+                    ><i class="fa-solid fa-landmark"></i> Mirasımız</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="iletisim.html" class="btn custom-btn"
+                    ><i class="fa-solid fa-phone-volume"></i> İletişim</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="Login.html" class="btn custom-btn login-butonu"
+                    >Login <i class="bi bi-box-arrow-in-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="position-relative" id="icerik-main">
+        <section>
+          <div class="container">
+            <h4 class="text-center text-white mb-4 pt-5 fs-2 fw-bold">
+              ~ ANTALYA ~
+            </h4>
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div
+                  id="carouselExample"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2500"
+                >
+                  <div class="carousel-inner">
+                    <a href="#konyaalti"
+                      ><div class="carousel-item active position-relative">
+                        <img
+                          src="img/konyaalti_sahili.jpg"
+                          class="d-block w-100 img-fluid carousel-image"
+                          alt="Konyaaltı Sahili"
+                        /></div
+                    ></a>
+                    <a href="#duden">
+                      <div class="carousel-item">
+                        <img
+                          src="img/duden_selalesi.jpg"
+                          class="d-block w-100 img-fluid carousel-image"
+                          alt="Düden Şelalesi"
+                        /></div
+                    ></a>
+                    <a href="#magaralı-koy"
+                      ><div class="carousel-item">
+                        <img
+                          src="img/magarali_koy.jpg"
+                          class="d-block w-100 img-fluid carousel-image"
+                          alt="Mağaralı Koy"
+                        /></div
+                    ></a>
+                    <a href="#side"
+                      ><div class="carousel-item">
+                        <img
+                          src="img/side_antik_kenti.jpg"
+                          class="d-block w-100 img-fluid carousel-image"
+                          alt="Side Antik Kenti"
+                        /></div
+                    ></a>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container mt-5 mb-5">
+          <div class="row align-items-center" id="antalya-hakkinda">
+            <h2 class="text-center fw-bold pt-3 pb-2">~ Antalya Hakkında ~</h2>
+            <p>
+              <img src="img/sparkles.gif" class="img-fluid" id="sparkles-gif" />
+              Antalya, Türkiye'nin güneyinde Akdeniz kıyısında yer alan bir
+              turizm cennetidir. Tarihi kalıntılar, masmavi denizler ve
+              büyüleyici doğasıyla her yıl milyonlarca turisti ağırlar.
+            </p>
+            <ul class="list-unstyled">
+              <li class="pb-2">
+                🦋 Antalya, MÖ 2. yüzyılda Bergama Kralı II. Attalos tarafından
+                <strong>"Attaleia"</strong> adıyla kurulmuştur.
+              </li>
+              <li class="pb-2">
+                ☀️ Yazları sıcak ve kurak, kışları ılık ve yağışlıdır.
+              </li>
+              <li class="pb-2">
+                🏛️ <em class="fw-bold">Aspendos, Side ve Perge</em> gibi tarihi
+                mekanlara sahiptir.
+              </li>
+              <li class="pb-2">
+                🌲<em class="fw-bold"
+                  >Düden Şelalesi, Köprülü Kanyon ve Adrasan Koyu</em
+                >
+                gibi birçok doğal güzelliklere sahiptir.
+              </li>
+              <li class="pb-2">
+                🌊<em class="fw-bold"> Konyaaltı ve Lara Plajları</em> dünyaca
+                ünlüdür.
+              </li>
+              <li class="pb-2">
+                ~ Antalya'nın nüfusu 2025 yılı itibariyle yaklaşık
+                <strong>2,7 milyon</strong>'dur. (Türkiye'nin 5. büyük
+                şehridir.)
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="container mt-5 mb-5">
+          <div class="row align-items-center" id="gezilecek-yerler-div">
+            <h2 class="text-center fw-bold pt-3 pb-2">~ Gezilecek Yerler ~</h2>
+            <h4 class="text-md-start fw-bold pt-2 pb-2" id="konyaalti">
+              1) Konyaaltı Plajı
+              <img
+                width="35"
+                height="35"
+                src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/external-beach-summer-party-smashingstocks-flat-smashing-stocks.png"
+                class="img-fluid pb-2"
+              />
+            </h4>
+            <img src="img/konyaalti_bilgi.jpg" class="img-fluid bilgi-img" />
+            <article class="pt-4 pb-4">
+              <em class="fw-bold">Konyaaltı Plajı</em>, Antalya'nın en popüler
+              ve merkezi plajlarından biri olup şehrin batı kıyısında,
+              Beydağları'nın eteklerinden başlayarak yaklaşık 7 km boyunca
+              uzanan geniş bir kıyı şerididir. İnce çakıl taşlarıyla kaplı olan
+              plaj, mavi bayraklı temiz denizi ve berrak sularıyla hem yerli hem
+              de yabancı turistlerin uğrak noktasıdır. Antalya şehir merkezine
+              yakın olması nedeniyle ulaşımı oldukça kolaydır; nostaljik tramvay
+              veya belediye otobüsleriyle rahatça ulaşılabilir. Plaj boyunca
+              halka açık ücretsiz alanların yanı sıra şezlong, şemsiye kiralayan
+              işletmeler ve duş-wc olanakları bulunmaktadır. Ayrıca plajın hemen
+              arkasındaki kafe ve restoranlarda deniz kenarında yemek yeme keyfi
+              yaşanabilir. Konyaaltı Plajı, gün batımı manzarası, sakin
+              atmosferi ve
+              <a
+                href="https://www.antalyaaquarium.com/Tr/Anasayfa"
+                target="_blank"
+                >Antalya Aquarium</a
+              >,<a href="https://akturpark.com.tr/" target="_blank">
+                Aktur Park</a
+              >
+              gibi yakın cazibe merkezleriyle de ziyaretçilerine unutulmaz bir
+              tatil deneyimi sunar. Özellikle yaz aylarında canlı bir sosyal
+              ortama sahip olan plaj, su sporları meraklıları için de ideal bir
+              yerdir.
+            </article>
+            <h4 class="text-md-start fw-bold pt-2 pb-2" id="duden">
+              2) Düden Şelalesi
+              <img
+                width="35"
+                height="35"
+                src="https://img.icons8.com/color/48/waterfall.png"
+                class="img-fluid pb-2"
+              />
+            </h4>
+            <img src="img/duden_bilgi.jpg" class="img-fluid bilgi-img" />
+            <article class="pt-4 pb-4">
+              <em class="fw-bold">Düden Şelalesi</em>, Antalya'nın en etkileyici
+              doğal güzelliklerinden biri olup şehir merkezine sadece 10 km
+              uzaklıkta yer alır. Düden Çayı'nın 40 metrelik bir falezden
+              Akdeniz'e dökülmesiyle oluşan bu muhteşem şelale, özellikle yaz
+              aylarında serinlemek isteyenler için ideal bir noktadır. Şelale,
+              aslında iki farklı bölümden oluşur: Yukarı Düden (Düdenbaşı) ve
+              Aşağı Düden (Karpuzkaldıran). Yukarı Düden, yeşillikler içinde
+              piknik yapılabilecek geniş bir park alanına sahipken, Aşağı Düden
+              ise denize döküldüğü noktadaki görsel şöleniyle büyüleyicidir.
+              Özellikle teknelerle yapılan turlarda, şelalenin denize dökülürken
+              oluşturduğu devasa beyaz köpükler ve gökkuşağı etkisi unutulmaz
+              anlar yaşatır. Giriş ücreti bulunan Düden Park, aileler için
+              dinlenme alanları, çocuk oyun parkları ve kafeleriyle de huzurlu
+              bir kaçış sunar. Antalya'nın sıcak yaz günlerinde serin suların ve
+              yeşilin tadını çıkarmak isteyenler için Düden Şelalesi, doğa ile
+              iç içe geçirilecek keyifli saatler vadeden bir cennettir.
+            </article>
+            <h4 class="text-md-start fw-bold pt-2 pb-2" id="magaralı-koy">
+              3) Mağaralı Koy
+              <img
+                width="35"
+                height="35"
+                src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/external-cave-landscape-vitaliy-gorbachev-flat-vitaly-gorbachev.png"
+                class="img-fluid pb-2"
+              />
+            </h4>
+            <img src="img/koy_bilgi.jpg" class="img-fluid bilgi-img" />
+            <article class="pt-4 pb-4">
+              <em class="fw-bold">Mağaralı Koy</em>, Antalya'nın Finike
+              ilçesinde bulunan ve doğal güzellikleriyle büyüleyen bir saklı
+              cennettir. Bu koy, adını kıyıdaki ilginç mağara oluşumlarından
+              alır ve berrak turkuaz sularıyla ünlüdür. Finike'nin batısında,
+              Adrasan ve Olympos'a yakın bir konumda yer alan koy, özellikle
+              tekne turlarıyla ziyaret edilen popüler bir noktadır. Koyun en
+              dikkat çeken özelliklerinden biri, kayalıklarda oluşan doğal
+              mağaralardır. Bu mağaralar, tekneyle gezilebilir ve özellikle
+              güneş ışığının suya yansımasıyla oluşan mavi tonlarıyla büyüleyici
+              bir atmosfer sunar. Finike Mağaralı Koy, sakin ve huzurlu bir
+              ortam arayanlar için idealdir. Çevresinde büyük oteller veya yoğun
+              turistik tesisler bulunmadığından, doğallığını korumuş bir yerdir.
+              Koyun berrak suları, snorkeling ve dalış tutkunları için mükemmel
+              bir ortam sunar; su altında renkli balık sürüleri ve çeşitli deniz
+              canlılarını gözlemlemek mümkündür. Ayrıca, koyun etrafındaki
+              kayalıklar ve yeşil bitki örtüsü, doğa fotoğrafçıları için harika
+              kareler sunar. Koya ulaşım genellikle Finike Marina'dan veya
+              Adrasan'dan kalkan teknelerle sağlanır. Tekne turları sırasında,
+              koyun etkileyici manzaralarını ve mağaralarını keşfetme fırsatı
+              bulunur. Karayoluyla ulaşım mümkün olsa da, yol dar ve patika
+              olduğu için genellikle tekne tercih edilir. Finike Mağaralı Koy,
+              özellikle yaz aylarında serinlemek ve doğayla baş başa kalmak
+              isteyenler için mükemmel bir kaçış noktasıdır. Eşsiz güzellikleri
+              ve huzur dolu atmosferiyle, Antalya'nın keşfedilmeye değer saklı
+              cennetlerinden biridir.
+            </article>
+            <h4 class="text-md-start fw-bold pt-2 pb-2" id="side">
+              4) Side Antik Kenti
+              <img
+                width="35"
+                height="35"
+                src="https://img.icons8.com/plasticine/100/ruins.png"
+                class="img-fluid pb-2"
+              />
+            </h4>
+            <img src="img/side_bilgi.jpg" class="img-fluid bilgi-img" />
+            <article class="pt-4 pb-4">
+              <em class="fw-bold">Side Antik Kenti</em>, Antalya'nın Manavgat
+              ilçesine bağlı, tarihle doğanın muhteşem uyumunu sergileyen bir
+              açık hava müzesidir. Antik dönemde bir liman kenti olarak kurulan
+              Side, adeta bir yarımada üzerine konumlanmış olup her iki yanında
+              uzanan kumsallarıyla büyüleyici bir atmosfere sahiptir. Kentin
+              tarihi MÖ 7. yüzyıla kadar uzanır ve Helenistik, Roma ve Bizans
+              dönemlerine ait izler taşır. Antik kentin en görkemli yapıları
+              arasında 15.000 kişilik Antik Tiyatro yer alır; bu tiyatro,
+              Anadolu'daki en iyi korunmuş antik tiyatrolardan biridir ve
+              günümüzde bile çeşitli etkinliklere ev sahipliği yapar. Apollon
+              Tapınağı ise deniz kenarındaki muhteşem konumuyla, özellikle gün
+              batımında ziyaretçilerine büyüleyici manzaralar sunar. Side Müzesi
+              olarak kullanılan Roma Hamamları, bölgeden çıkarılan tarihi
+              eserleri sergileyerek kentin zengin geçmişine ışık tutar. Side
+              Antik Kenti'nin dar taş sokakları, restore edilmiş tarihi evleri
+              ve butik otelleriyle çevrili olup ziyaretçilere hem tarihi hem de
+              modern yaşamın harmanlandığı bir deneyim sunar. Kentin hemen yanı
+              başındaki Side Plajı ve Kumköy Plajı, tarihi keşiften sonra
+              serinlemek isteyenler için ideal noktalardır. Antik kent, aynı
+              zamanda alışveriş tutkunları için de bir cennettir; sokaklar
+              boyunca sıralanan dükkanlarda el yapımı hediyelik eşyalar, takılar
+              ve yerel ürünler bulunabilir. Tarih, deniz ve kültürün iç içe
+              geçtiği Side Antik Kenti, her yıl binlerce ziyaretçiyi kendine
+              çeken büyüleyici bir destinasyondur. Antalya'nın bu eşsiz tarihi
+              hazinesi, geçmişin izlerini günümüze taşırken, ziyaretçilerine
+              unutulmaz bir seyahat deneyimi vaat eder.
+            </article>
+          </div>
+          <a href="#icerik-main" id="yukari-git">
+            <i class="fas fa-chevron-circle-up"></i>
+          </a>
+        </section>
+      </main>
+      <footer
+        class="text-white p-3 w-100 d-flex justify-content-between align-items-center"
+      >
+        <p class="text-md-start mb-0">
+          © 2025 Elif Avcu. Tüm hakları saklıdır.
+        </p>
+        <div class="d-flex justify-content-end">
+          <a
+            href="https://github.com/elifavcu0/Web-Teknolojileri-Proje-G231210023"
+            class="text-white mx-2 github-icon fs-4"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/elifavcu"
+            class="text-white mx-2 linkedin-icon fs-4"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
