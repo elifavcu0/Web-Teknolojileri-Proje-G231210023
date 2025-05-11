@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.sayfa-duzeni-div {
+  min-height: 100vh; /*Sayfanın %100'ü kaplanacak her zaman*/
+  display: flex;
+  flex-direction: column; /* Sayfa içerisindeki elemanlar dikey olarak hizalanır. Footer hep altta kalır.*/
+}
 header {
   background-color: #2e4c6d;
   width: 100%;
@@ -51,12 +56,17 @@ body {
 }
 footer {
   background-color: #2e4c6d !important;
-  color: white;
   position: relative; /* footer'ın katmanını ayarlıyoruz */
   z-index: 10; /* footer'ın diğer öğelerin üzerinde görünmesini sağlıyoruz */
   text-align: center;
+  margin-top: auto;
 }
 .github-icon:hover,
 .linkedin-icon:hover {
   color: #f7d9d9 !important;
+}
+.aktif-buton {
+  background-color: #f7d9d9;
+  color: #2e4c6d;
+  border-color: #a3c4f3;
 }
