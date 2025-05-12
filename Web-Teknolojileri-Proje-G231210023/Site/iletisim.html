@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/menu&footer_style.css" />
+    <link rel="stylesheet" href="css/iletisim_style.css" />
+  </head>
+  <body>
+    <div class="sayfa-duzeni-div">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid justify-content-between">
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="Hakkimda.html"
+              id="logo-isim-soyisim"
+              ><i class="fa-solid fa-rocket fa-beat roket_logo"></i>Elif Avcu</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav d-flex align-items-center gap-2">
+                <li class="nav-item">
+                  <a
+                    href="Hakkimda.html"
+                    class="btn custom-btn"
+                    id="hakkimda-butonu"
+                  >
+                    <i class="bi bi-person-lines-fill"></i> Hakkımda</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a href="Ozgecmis.html" class="btn custom-btn">
+                    <i class="fa-solid fa-award"></i>
+                    Özgeçmiş</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="ilgi-alanlarim.html" class="btn custom-btn">
+                    <i class="fa-solid fa-icons"></i> İlgi Alanlarım</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="Sehrim.html" class="btn custom-btn"
+                    ><i class="fa-solid fa-tree-city"></i> Şehrim</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="Mirasimiz.html" class="btn custom-btn"
+                    ><i class="fa-solid fa-landmark"></i> Mirasımız</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="iletisim.html" class="btn custom-btn aktif-buton"
+                    ><i class="fa-solid fa-phone-volume"></i> İletişim</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="Login.html" class="btn custom-btn login-butonu"
+                    >Login <i class="bi bi-box-arrow-in-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="icerik-main">
+        <div class="container-fluid" id="iletisim-container">
+          <div class="row mt-4 g-3 ms-3">
+            <div class="col col-md-5 mb-3" id="harita">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356.6538691773152!2d30.325462506100322!3d40.742381760668515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaded70ee240b%3A0xd81085b5551312fd!2sBilgisayar%20Ve%20Bili%C5%9Fim%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1746988100915!5m2!1str!2str"
+                width="500"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col col-md-7 mb-3" id="iletisim-form-div">
+              <h3 class="ps-5 pt-3 fs-1 fw-bold color-dark">İLETİŞİM</h3>
+              <p class="ps-5">
+                Bilgisayar ve Bilişim Bilimleri Fakültesi Haşim Gürdamar Binası,
+                Serdivan / SAKARYA <br /><br />
+                <strong>İletişim Numarası: </strong> +90 512 345 6789
+                <br /><br />
+                <strong>E-mail: </strong> elif.avcu@ogr.sakarya.edu.tr
+              </p>
+              <br />
+              <form
+                action="iletisim.php"
+                method="post"
+                class="row g-1 ps-4 p-3 mb-3"
+              >
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    Adınız:
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ad"
+                      placeholder="Adınızı giriniz."
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    Soyadınız:
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="soyad"
+                      placeholder="Soyadınızı giriniz."
+                    />
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    E-mail adresiniz:
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="ornek00@gmail.com"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    Telefon numaranız:
+                    <input
+                      type="tel"
+                      class="form-control"
+                      maxlength="11"
+                      id="telefon-numarasi"
+                      placeholder="05XX XXX XXXX"
+                    />
+                  </div>
+                </div>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4">
+                    Yaşadığınız Şehir:
+                    <select class="form-select" id="sehir">
+                      <option value="0" selected>-Seçiniz-</option>
+                      <option value="1">Adana</option>
+                      <option value="2">Adıyaman</option>
+                      <option value="3">Ağrı</option>
+                      <option value="4">Aksaray</option>
+                      <option value="5">Amasya</option>
+                      <option value="6">Ankara</option>
+                      <option value="7">Antalya</option>
+                      <option value="8">Ardahan</option>
+                      <option value="9">Artvin</option>
+                      <option value="10">Aydın</option>
+                      <option value="11">Balıkesir</option>
+                      <option value="12">Bartın</option>
+                      <option value="13">Batman</option>
+                      <option value="14">Bayburt</option>
+                      <option value="15">Bilecik</option>
+                      <option value="16">Bingöl</option>
+                      <option value="17">Bitlis</option>
+                      <option value="18">Bolu</option>
+                      <option value="19">Burdur</option>
+                      <option value="20">Bursa</option>
+                      <option value="21">Çanakkale</option>
+                      <option value="22">Çankırı</option>
+                      <option value="23">Çorum</option>
+                      <option value="24">Denizli</option>
+                      <option value="25">Diyarbakır</option>
+                      <option value="26">Düzce</option>
+                      <option value="27">Edirne</option>
+                      <option value="28">Elazığ</option>
+                      <option value="29">Erzincan</option>
+                      <option value="30">Erzurum</option>
+                      <option value="31">Eskişehir</option>
+                      <option value="32">Gaziantep</option>
+                      <option value="33">Giresun</option>
+                      <option value="34">Gümüşhane</option>
+                      <option value="35">Hakkâri</option>
+                      <option value="36">Hatay</option>
+                      <option value="37">Iğdır</option>
+                      <option value="38">Isparta</option>
+                      <option value="39">İstanbul</option>
+                      <option value="40">İzmir</option>
+                      <option value="41">Kahramanmaraş</option>
+                      <option value="42">Karabük</option>
+                      <option value="43">Karaman</option>
+                      <option value="44">Kars</option>
+                      <option value="45">Kastamonu</option>
+                      <option value="46">Kayseri</option>
+                      <option value="47">Kilis</option>
+                      <option value="48">Kırıkkale</option>
+                      <option value="49">Kırklareli</option>
+                      <option value="50">Kırşehir</option>
+                      <option value="51">Kocaeli</option>
+                      <option value="52">Konya</option>
+                      <option value="53">Kütahya</option>
+                      <option value="54">Malatya</option>
+                      <option value="55">Manisa</option>
+                      <option value="56">Mardin</option>
+                      <option value="57">Mersin</option>
+                      <option value="58">Muğla</option>
+                      <option value="59">Muş</option>
+                      <option value="60">Nevşehir</option>
+                      <option value="61">Niğde</option>
+                      <option value="62">Ordu</option>
+                      <option value="63">Osmaniye</option>
+                      <option value="64">Rize</option>
+                      <option value="65">Sakarya</option>
+                      <option value="66">Samsun</option>
+                      <option value="67">Şanlıurfa</option>
+                      <option value="68">Siirt</option>
+                      <option value="69">Sinop</option>
+                      <option value="70">Sivas</option>
+                      <option value="71">Şırnak</option>
+                      <option value="72">Tekirdağ</option>
+                      <option value="73">Tokat</option>
+                      <option value="74">Trabzon</option>
+                      <option value="75">Tunceli</option>
+                      <option value="76">Uşak</option>
+                      <option value="77">Van</option>
+                      <option value="78">Yalova</option>
+                      <option value="79">Yozgat</option>
+                      <option value="80">Zonguldak</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 ps-5 mt-4">
+                    Cinsiyetiniz: <br />
+                    Erkek
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      value="erkek"
+                      name="cinsiyet"
+                      id="erkek"
+                    />
+                    Kadın
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      value="kadin"
+                      name="cinsiyet"
+                      id="kadin"
+                    />
+                  </div>
+                  <div class="col-md-4 ps-4 mt-4">
+                    Doğum Tarihiniz: <br />
+                    <input type="date" class="form-control" id="dogum-tarihi" />
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-3 mb-3">
+                  Profil fotoğrafınızı yükleyiniz: <br /><input
+                    type="file"
+                    id="pp-dosya"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  Konu:
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    id="konu"
+                    placeholder="Kısaca konudan bahsediniz."
+                  ></textarea>
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="form-onay"
+                  />
+                  <strong class="text-decoration-underline">
+                    Form bilgilerimi göndermeyi onaylıyorum.</strong
+                  >
+                </div>
+
+                <div class="row mb-3 justify-content-center">
+                  <div class="col-md-3">
+                    <button
+                      type="submit"
+                      class="btn btn-custom butonlar"
+                      id="gonder-butonu"
+                    >
+                      Gönder
+                    </button>
+                  </div>
+                  <div class="col-md-3">
+                    <button
+                      type="reset"
+                      class="btn btn-custom butonlar"
+                      id="temizle-butonu"
+                    >
+                      Temizle
+                    </button>
+                  </div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                  <div class="col-md-3">
+                    <button
+                      type="button"
+                      class="btn btn-custom butonlar"
+                      id="JS-butonu"
+                    >
+                      JS Kontrol
+                    </button>
+                  </div>
+                  <div class="col-md-3">
+                    <button
+                      type="button"
+                      class="btn btn-custom butonlar"
+                      id="FW-butonu"
+                    >
+                      FW Kontrol
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="text-white p-3 w-100 d-flex justify-content-between align-items-center"
+      >
+        <p class="text-md-start mb-0">
+          © 2025 Elif Avcu. Tüm hakları saklıdır.
+        </p>
+        <div class="d-flex justify-content-end">
+          <a
+            href="https://github.com/elifavcu0/Web-Teknolojileri-Proje-G231210023"
+            class="text-white mx-2 github-icon fs-4"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/elifavcu"
+            class="text-white mx-2 linkedin-icon fs-4"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="iletisim.js"></script>
+  </body>
+</html>
