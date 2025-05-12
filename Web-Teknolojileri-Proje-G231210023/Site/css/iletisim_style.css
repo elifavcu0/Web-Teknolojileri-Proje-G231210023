@@ -1,0 +1,76 @@
+#iletisim-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+#harita {
+  width: 50%;
+  max-width: 550px;
+  align-items: flex-start !important;
+}
+#harita iframe {
+  /*ID’si harita olan elementin içindeki iframe etiketini seç.*/
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#iletisim-form-div {
+  border-radius: 5px;
+  background-color: rgba(215, 235, 255, 0.736);
+  font-family: "Montserrat", sans-serif;
+}
+form {
+  margin-left: 2rem !important;
+  border-radius: 6px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 1351px) {
+  #iletisim-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  #harita,
+  #iletisim-form-div {
+    height: auto;
+    min-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  form {
+    margin-left: 1rem !important;
+  }
+}
+textarea {
+  resize: none;
+}
+.butonlar {
+  font-weight: bold;
+  width: 90% !important;
+}
+#gonder-butonu {
+  background-color: rgb(100, 239, 100);
+}
+#gonder-butonu:hover {
+  background-color: #aaf0d1;
+}
+#temizle-butonu {
+  background-color: #ff8aff;
+}
+#temizle-butonu:hover {
+  background-color: #d8bfd8;
+}
+#JS-butonu {
+  background-color: #f3811d;
+}
+#JS-butonu:hover {
+  background-color: #ffdab9;
+}
+#FW-butonu {
+  background-color: #fff429;
+}
+#FW-butonu:hover {
+  background-color: #fffdd0;
+}
