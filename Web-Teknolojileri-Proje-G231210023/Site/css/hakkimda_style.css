@@ -25,11 +25,6 @@
   animation-duration: 2s;
   font-size: 30px;
 }
-.aktif-buton {
-  background-color: #f7d9d9;
-  color: #2e4c6d !important;
-  border-color: #a3c4f3;
-}
 .img-slider {
   max-width: 400px;
 }
@@ -61,7 +56,7 @@ h4 {
   max-height: 500px;
   object-fit: contain;
 }
-.icerik-section {
+#icerik-main {
   background-image: url("../img/bulut_arkaplan.jpg");
   background-size: cover;
   background-repeat: no-repeat;
