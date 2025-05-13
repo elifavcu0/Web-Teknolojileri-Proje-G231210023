@@ -127,7 +127,9 @@
               <form
                 action="iletisim.php"
                 method="post"
+                id="iletisim_formu"
                 class="row g-1 ps-4 p-3 mb-3"
+                @submit.prevent="Gonder"
               >
                 <div class="row g-3 mb-3">
                   <div class="col-md-6">
@@ -136,6 +138,8 @@
                       type="text"
                       class="form-control"
                       id="ad"
+                      name="ad"
+                      v-model="ad"
                       placeholder="Adınızı giriniz."
                     />
                   </div>
@@ -145,11 +149,12 @@
                       type="text"
                       class="form-control"
                       id="soyad"
+                      name="soyad"
+                      v-model="soyad"
                       placeholder="Soyadınızı giriniz."
                     />
                   </div>
                 </div>
-
                 <div class="row g-3 mb-3">
                   <div class="col-md-6">
                     E-mail adresiniz:
@@ -157,6 +162,8 @@
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
+                      v-model="email"
                       placeholder="ornek00@gmail.com"
                     />
                   </div>
@@ -167,6 +174,8 @@
                       class="form-control"
                       maxlength="11"
                       id="telefon-numarasi"
+                      name="telefon-numarasi"
+                      v-model="telefon_numarasi"
                       placeholder="05XX XXX XXXX"
                     />
                   </div>
@@ -174,7 +183,12 @@
                 <div class="row g-3 mb-3">
                   <div class="col-md-4">
                     Yaşadığınız Şehir:
-                    <select class="form-select" id="sehir">
+                    <select
+                      class="form-select"
+                      id="sehir"
+                      name="sehir"
+                      v-model="sehir"
+                    >
                       <option value="0" selected>-Seçiniz-</option>
                       <option value="1">Adana</option>
                       <option value="2">Adıyaman</option>
@@ -267,6 +281,8 @@
                       value="erkek"
                       name="cinsiyet"
                       id="erkek"
+                      name="erkek"
+                      v-model="cinsiyet"
                     />
                     Kadın
                     <input
@@ -275,11 +291,19 @@
                       value="kadin"
                       name="cinsiyet"
                       id="kadin"
+                      name="kadin"
+                      v-model="cinsiyet"
                     />
                   </div>
                   <div class="col-md-4 ps-4 mt-4">
                     Doğum Tarihiniz: <br />
-                    <input type="date" class="form-control" id="dogum-tarihi" />
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="dogum-tarihi"
+                      name="dogum-tarihi"
+                      v-model="dogum_tarihi"
+                    />
                   </div>
                 </div>
 
@@ -287,21 +311,26 @@
                   Profil fotoğrafınızı yükleyiniz: <br /><input
                     type="file"
                     id="pp-dosya"
+                    name="pp-dosya"
+                    @change="dosyaSec"
                   />
                 </div>
-
                 <div class="mb-3">
                   Konu:
                   <textarea
                     class="form-control"
                     rows="4"
                     id="konu"
+                    name="konu"
+                    v-model="konu"
                     placeholder="Kısaca konudan bahsediniz."
                   ></textarea>
                   <input
                     type="checkbox"
                     class="form-check-input"
                     id="form-onay"
+                    name="form-onay"
+                    v-model="form_onay"
                   />
                   <strong class="text-decoration-underline">
                     Form bilgilerimi göndermeyi onaylıyorum.</strong
@@ -314,6 +343,7 @@
                       type="submit"
                       class="btn btn-custom butonlar"
                       id="gonder-butonu"
+                      :disabled="gonderButonuDisabled"
                     >
                       Gönder
                     </button>
@@ -342,9 +372,10 @@
                     <button
                       type="button"
                       class="btn btn-custom butonlar"
-                      id="FW-butonu"
+                      id="VUE-butonu"
+                      @click="Kontrol"
                     >
-                      FW Kontrol
+                      VUE Kontrol
                     </button>
                   </div>
                 </div>
@@ -383,5 +414,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="iletisim.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="vue.js_kontrol.js"></script>
   </body>
 </html>
