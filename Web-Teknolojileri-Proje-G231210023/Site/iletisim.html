@@ -129,6 +129,7 @@
                 method="post"
                 id="iletisim_formu"
                 class="row g-1 ps-4 p-3 mb-3"
+                enctype="multipart/form-data"
                 @submit.prevent="Gonder"
               >
                 <div class="row g-3 mb-3">
@@ -164,7 +165,7 @@
                       id="email"
                       name="email"
                       v-model="email"
-                      placeholder="ornek00@gmail.com"
+                      placeholder="ornek@gmail.com"
                     />
                   </div>
                   <div class="col-md-6">
@@ -278,7 +279,7 @@
                     <input
                       type="radio"
                       class="form-check-input"
-                      value="erkek"
+                      value="1"
                       name="cinsiyet"
                       id="erkek"
                       name="erkek"
@@ -288,7 +289,7 @@
                     <input
                       type="radio"
                       class="form-check-input"
-                      value="kadin"
+                      value="2"
                       name="cinsiyet"
                       id="kadin"
                       name="kadin"
@@ -311,7 +312,7 @@
                   Profil fotoğrafınızı yükleyiniz: <br /><input
                     type="file"
                     id="pp-dosya"
-                    name="pp-dosya"
+                    name="pp_dosya"
                     @change="dosyaSec"
                   />
                 </div>
