@@ -1,0 +1,42 @@
+.card {
+  max-width: 350px; /* Kartların maksimum genişliğini sınırla */
+  margin: 0 auto; /* Kartları ortala */
+  transition: transform 0.3s; /* Hover efekti için geçiş */
+}
+.card:hover {
+  transform: scale(1.03); /* Hafif büyütme efekti */
+}
+#ilgi_alani_p {
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.1rem;
+}
+#icerik-main {
+  background-image: url("../img/dizi_arkaplan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10%;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.1); /* #2e4c6d rengi %80 opak */
+  flex: 1;
+}
+#icerik-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* %50 opak siyah */
+  z-index: 1;
+  backdrop-filter: blur(2px); /* BLUR ETKİSİ */
+  -webkit-backdrop-filter: blur(2px); /* Safari için */
+}
+.container {
+  position: relative;
+  z-index: 2;
+}
