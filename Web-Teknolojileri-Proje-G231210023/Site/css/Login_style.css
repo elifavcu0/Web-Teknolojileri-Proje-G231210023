@@ -1,0 +1,28 @@
+body {
+  background-image: url("../img/login_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.card {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(46, 76, 109, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transform: scale(1.02); /* Kartın boyutunu büyütme */
+  transition: transform 0.5s ease-in-out;
+}
+#giris_butonu {
+  background-color: antiquewhite;
+  color: #2e4c6d;
+}
+#giris_butonu:hover {
+  background-color: #2e4c6d;
+  color: aliceblue;
+}
